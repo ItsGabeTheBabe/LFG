@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
+import Board from './Board'
 
 class App extends Component {
   render() {
@@ -9,7 +10,12 @@ class App extends Component {
       <div >
       <Route path="/" exact strict render={
         ()=>{
-        return ( <h1>Welcome Home</h1>);
+        return (
+          <div>
+          <h1>Welcome Home</h1>
+          <Board />
+          </div>
+        );
       }
       }/>
 
@@ -38,6 +44,7 @@ class App extends Component {
         return ( <h1>Your Profile</h1>);
       }
       }/>
+
       </div>
       </Router>
     );
