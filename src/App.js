@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+<<<<<<< HEAD
 import { BrowserRouter as Router} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
+=======
+import Board from './Board'
+>>>>>>> edfd086ea37e7b85c0e703366efc4dd14a198705
 
 class App extends Component {
   render() {
     return (
       <Router>
       <div >
+<<<<<<< HEAD
       <Route path="/" exact strict render={
         ()=>{
         return ( <h1>Welcome Home</h1>);
@@ -38,6 +43,9 @@ class App extends Component {
         return ( <h1>Your Profile</h1>);
       }
       }/>
+=======
+      <Board />
+>>>>>>> edfd086ea37e7b85c0e703366efc4dd14a198705
       </div>
       </Router>
     );
